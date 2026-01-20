@@ -1,7 +1,15 @@
-import Hero from "./components/Hero";
+import { Routes, Route } from "react-router-dom";
 
-function App() {
-  return <Hero />;
+import MainHome from "./components/Main-Home";
+// import FloatingPortfolio from ".//FloatingPortfolio";
+// import PinterestPortfolio from "./pages/PinterestPortfolio";
+
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/main-home" element={<MainHome />} />
+      {/* <Route path="/portfolio-floating" element={<FloatingPortfolio />} /> */}
+      {/* <Route path="/portfolio-pinterest" element={<PinterestPortfolio />} /> */}
+    </Routes>
+  );
 }
-
-export default App;
