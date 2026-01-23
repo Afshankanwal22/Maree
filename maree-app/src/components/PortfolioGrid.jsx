@@ -1,19 +1,23 @@
 import { useNavigate } from "react-router-dom";
 
+import card1 from "../images/card-1.jpg";
+import card2 from "../images/card-2.jpg";
+import card3 from "../images/card-3.jpg";
+
 const cards = [
   {
     title: "Main Home",
-    image: "/images/card-1.jpg",
+    image: card1,
     path: "/Main-Home",
   },
   {
     title: "Floating Portfolio",
-    image: "/images/card-2.jpg",
+    image: card2,
     path: "/portfolio-floating",
   },
   {
     title: "Portfolio Pinterest",
-    image: "/images/card-3.jpg",
+    image: card3,
     path: "/portfolio-pinterest",
   },
 ];

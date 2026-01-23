@@ -1,39 +1,56 @@
+import bike from "../images/bike.png";
+import bird from "../images/bird.png";
+import img5 from "../images/landing-slider-img-5.png";
+import img8 from "../images/landing-slider-img-8.png";
+import img9 from "../images/landing-slider-img-9.png";
+import img10 from "../images/landing-slider-img-10.png";
+import img11 from "../images/landing-slider-img-11.png";
+import img12 from "../images/landing-slider-img-12.png";
+
 export default function Hero() {
   return (
     <section
       id="hero"
       className="relative min-h-screen bg-[#fdfdfc] flex items-center justify-center overflow-hidden"
     >
-
-      {/* Floating dots */}
+      {/* Floating dot */}
       <span className="absolute top-20 left-32 w-3 h-3 bg-[#f2cfc2] rounded-full" />
 
-      {/* Left Illustration */}
-      <img src="/src/images/landing-slider-img-8.png" className="absolute left-40 bottom-[50px] w-20" alt="" />
+      {/* Left illustrations */}
       <img
-        src="/src/images/bike.png"
+        src={img8}
+        alt=""
+        className="absolute left-40 bottom-[50px] w-[80px]"
+      />
+
+      <img
+        src={bike}
         alt="Bike Couple"
         className="absolute left-10 bottom-24 w-[260px]"
       />
-      <img src="/src/images/landing-slider-img-5.png" className="absolute left-40 top-32 w-20" alt="" />
 
-      {/* Right Illustration */}
       <img
-        src="/src/images/bird.png"
-        alt="Bird"
-        className="absolute right-24 top-32 w-30"
+        src={img5}
+        alt=""
+        className="absolute left-40 top-32 w-[80px]"
       />
 
-      {/* Center Content */}
+      {/* Right illustration */}
+      <img
+        src={bird}
+        alt="Bird"
+        className="absolute right-24 top-32 w-[120px]"
+      />
+
+      {/* Center content */}
       <div className="relative z-10 text-center max-w-xl px-6 mx-auto">
-        <h1 className="flex items-center justify-center gap-4 text-6xl md:text-7xl font-serif font-bold text-gray-900">
+        <h1 className="text-6xl md:text-7xl font-serif font-bold text-gray-900">
           Marée
         </h1>
-        <img src="" alt="" />
 
         <p className="mt-6 text-gray-500 text-lg leading-relaxed">
-          Welcome to Marée, a brand new illustration & design portfolio
-          just waiting for your work to start populating its templates!
+          Welcome to Marée, a brand new illustration & design portfolio just
+          waiting for your work to start populating its templates!
         </p>
 
         <button className="mt-10 px-10 py-3 border border-[#e8b6a8] text-gray-800 tracking-widest hover:bg-[#e8b6a8] hover:text-white transition">
@@ -41,14 +58,13 @@ export default function Hero() {
         </button>
       </div>
 
-      {/* Right Decoration Group */}
+      {/* Right bottom decoration */}
       <div className="absolute right-10 bottom-10 flex items-end gap-4">
-        <img src="/src/images/landing-slider-img-9.png" className="w-10 mb-6" alt="" />
-        <img src="/src/images/landing-slider-img-10.png" className="w-20" alt="" />
-        <img src="/src/images/landing-slider-img-11.png" className="w-15 mb-6" alt="" />
-        <img src="/src/images/landing-slider-img-12.png" className="w-30" alt="" />
+        <img src={img9} className="w-[40px] mb-6" alt="" />
+        <img src={img10} className="w-[80px]" alt="" />
+        <img src={img11} className="w-[60px] mb-6" alt="" />
+        <img src={img12} className="w-[120px]" alt="" />
       </div>
-
     </section>
   );
 }
