@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
-import card1 from "../images/card-1.jpg";
-import card2 from "../images/card-2.jpg";
-import card3 from "../images/card-3.jpg";
+import card1 from "../images/bird.png";
+import card2 from "../images/bird.png";
+import card3 from "../images/bird.png";
 
 const cards = [
   {
