@@ -1,25 +1,14 @@
 import { useNavigate } from "react-router-dom";
-
 import card1 from "../images/bird.png";
 import card2 from "../images/bird.png";
 import card3 from "../images/bird.png";
+// import other cards as needed
 
 const cards = [
-  {
-    title: "Main Home",
-    image: card1,
-    path: "/Main-Home",
-  },
-  {
-    title: "Floating Portfolio",
-    image: card2,
-    path: "/portfolio-floating",
-  },
-  {
-    title: "Portfolio Pinterest",
-    image: card3,
-    path: "/portfolio-pinterest",
-  },
+  { title: "Main Home", image: card1, path: "/main-home" },
+  { title: "Floating Portfolio", image: card2, path: "/portfolio-floating" },
+  { title: "Portfolio Pinterest", image: card3, path: "/portfolio-pinterest" },
+  // add more cards once images are imported
 ];
 
 export default function PortfolioGrid() {

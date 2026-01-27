@@ -1,13 +1,13 @@
 import Hero from "./components/Hero";
 import PortfolioGrid from "./components/PortfolioGrid";
-import HeroSlider from "./components/HeroSlider";
+import LastSection from "./components/LastSection";
 
 export default function App() {
   return (
     <>
       <Hero />
       <PortfolioGrid />
-      <HeroSlider />
+      <LastSection />
       
     </>
   );
