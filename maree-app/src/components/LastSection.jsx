@@ -5,6 +5,7 @@ import illustration from "../images/short-slider-rev-1-img-3.png";
 import leftLeaf from "../images/landing-end-slider-img-1.png";
 import rightLeaf from "../images/landing-end-slider-img-7.png";
 import heartImg from "../images/landing-end-slider-img-3.png";
+import Heading from "../images/landing-end-slider-img-2-1.png"
 
 export default function LastSection() {
   return (
@@ -46,6 +47,12 @@ export default function LastSection() {
         src={rightLeaf}
         alt="Right leaf"
         className="absolute bottom-10 right-10 w-24 md:w-32 opacity-80"
+      />
+      {/* Heading */}
+      <img
+        src={Heading}
+        alt="Right leaf"
+        className="absolute bottom-10 left-10 w-24 md:w-32 opacity-80"
       />
 
       {/* Heart */}
