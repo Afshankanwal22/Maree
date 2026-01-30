@@ -14,7 +14,10 @@ export default function Hero() {
       className="relative min-h-screen bg-[#fdfdfc] flex items-center justify-center overflow-hidden"
     >
       {/* Floating dot */}
-      <span className="absolute top-20 left-32 w-3 h-3 bg-[#f2cfc2] rounded-full" />
+      <span className="absolute top-20 left-32 w-5 h-5 bg-[#f2cfc2] rounded-full" />
+      {/* <span className="absolute top-20 left-12 w-5 h-5 bg-[#f2cfc2] rounded-full" /> */}
+      {/* <span className="absolute top-20 right-32 w-5 h-5 bg-[#f2cfc2] rounded-full" /> */}
+
 
       {/* Left illustrations */}
       <img
@@ -22,6 +25,7 @@ export default function Hero() {
         alt=""
         className="absolute left-40 bottom-[50px] w-[80px]"
       />
+      
 
       <img
         src={bike}
@@ -39,11 +43,13 @@ export default function Hero() {
       <img
         src={bird}
         alt="Bird"
-        className="absolute right-24 top-32 w-[120px]"
+        className="absolute right-24 top-12 w-[120px]"
       />
-
+       
       {/* Center content */}
+      
       <div className="relative z-10 text-center max-w-xl px-6 mx-auto">
+       <span className="absolute bottom-60 right-32 w-5 h-5 bg-[#f2cfc2] rounded-full" />
         <h1 className="text-6xl md:text-7xl font-serif font-bold text-gray-900">
           Marée
         </h1>
@@ -56,6 +62,8 @@ export default function Hero() {
         <button className="mt-10 px-10 py-3 border border-[#e8b6a8] text-gray-800 tracking-widest hover:bg-[#e8b6a8] hover:text-white transition">
           PURCHASE
         </button>
+        
+        
       </div>
 
       {/* Right bottom decoration */}
